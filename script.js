@@ -446,7 +446,7 @@ document.onkeyup = function(e) {
 
 document.getElementById("change-mode").onclick = function() {
     if (uiLoaded) {
-        window.location = "/connect4/"
+        window.location = "."
     }
 }
 
