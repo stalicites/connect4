@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src = "socket.io.js"></script>
+</head>
+<body>
+    <div id = "centered">
+        <div>
+            <h2 id = "title">Connect 4</h2>
+            <canvas id = "game" width="700" height="630"></canvas>
+            <div>
+                <button class="panel-btn" id = "resign">Resign</button>
+                <button class="panel-btn" id = "theme-change">Change Theme</button>  
+                <button class="panel-btn" id = "change-mode">Change Mode</button>
+            </div>
+            <div id = "resign-panel" style = "display: none;">
+                <p>Are you sure you want to resign?</p>
+                <button class="panel-btn" id = "yes" style = "background-color: rgb(61, 224, 96); width: 70px; margin-top: 0;">Yes</button>
+                <button class="panel-btn" id = "no" style = "background-color: rgb(224, 61, 61); width: 70px; margin-top: 0;">No</button>
+            </div>
+        </div>
+        <div id = "nav-bar">
+            <h2>Select your mode:</h2>
+            <input type="radio" id="online-multiplayer" name = "game-mode" value="online" checked class = "choose">
+            <label for="html">Online Multiplayer</label>
+            <p></p>
+            <input type="radio" id="two-player" value="two-player" name = "game-mode" class = "choose">
+            <label for="html">Two Player</label>
+            <p></p>
+            <input type="radio" id="single-player" value="single" name = "game-mode" class = "choose">
+            <label for="html">Single Player (Bot)</label>
+            <p></p>
+            <button id = "start-game" class="unsadden">Start</button>
+        </div>
+    </div>
+</body>
+<script src = "script.js"></script>
+</html>

@@ -1,0 +1,81 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(138, 138, 138);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#title {
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+#nav-bar {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 190px;
+    padding: 30px;
+}
+
+.create-panel {
+    width: 150px;
+    height: 100px;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border: 0px;
+    background-color: rgb(67, 107, 176);
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.sadden {
+    background-color: rgb(67, 107, 176);
+    color: black;
+    cursor: default;
+}
+
+.unsadden {
+    background-color: rgba(93, 152, 255);
+    color: white;
+    cursor: pointer;
+}
+
+#start-game, #copy-button {
+    background-color: rgba(93, 152, 255);
+    color: white;
+}
+
+#copy-button {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, label {
+    margin: 0;
+    cursor: pointer;
+}
